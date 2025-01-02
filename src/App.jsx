@@ -15,7 +15,7 @@ function App() {
     setUserInput((prevUserInput) => {
       const changedUserInput = {
         ...prevUserInput,
-        [inputIdentifier]: newValue,
+        [inputIdentifier]: +newValue, //this plus is used for type conversion : string->int
       }
 
       return changedUserInput
