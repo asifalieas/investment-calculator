@@ -27,7 +27,7 @@ export default function Results({ input }) {
 
           const totalAmoutInvested = yearData.valueEndOfYear - totalInterest
           return (
-            <tr>
+            <tr key={yearData.year}>
               <td>{yearData.year}</td>
               <td>{formatter.format(yearData.valueEndOfYear)}</td>
               <td>{formatter.format(yearData.interest)}</td>
